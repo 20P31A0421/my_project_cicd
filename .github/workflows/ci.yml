@@ -29,6 +29,12 @@ jobs:
           echo "Confusion Matrix & Feature Importance" > report1.md
           echo '|[](./ConfusionMatrix.png "ConfusionMatrix")' >> report1.md
           echo '|[](./FeatureImportance.png "FeatureImportance")' >> report1.md
+
+          git add "iris (1).csv"
+          git commit -m "Added dataset file"
+          git push origin main
+
      
           cat report.md report1.md >> combined_file.md
           cml comment create combined_file.md
+          
