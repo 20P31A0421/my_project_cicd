@@ -30,7 +30,7 @@ jobs:
           echo '|[](./ConfusionMatrix.png "ConfusionMatrix")' >> report1.md
           echo '|[](./FeatureImportance.png "FeatureImportance")' >> report1.md
 
-          git add "iris (1).csv"
+          git add "iris.csv"
           git commit -m "Added dataset file"
           git push origin main
 
